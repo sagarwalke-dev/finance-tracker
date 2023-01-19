@@ -5,7 +5,7 @@ import java.util.Date;
 import lombok.Data;
 
 @Data
-public class AddAssertRequest {
+public class AddAssetRequest {
 	private String userName;
 	private String investmentType;
 	private String assertType;

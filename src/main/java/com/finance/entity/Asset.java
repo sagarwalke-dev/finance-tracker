@@ -7,14 +7,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Data;
 
-@Document(collection = "assert")
+@Document(collection = "asset")
 @Data
-public class Assert {
+public class Asset {
 	@Id
-	private String assertId;
+	private String assetId;
 	private String userName;
 	private String investmentType;
-	private String assertType;
+	private String assetType;
 	private Date investmentDate;
 	private Integer investmentAmount;
 	private String comment;
