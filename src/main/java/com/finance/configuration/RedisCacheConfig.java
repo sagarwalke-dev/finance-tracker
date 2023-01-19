@@ -33,8 +33,6 @@ public class RedisCacheConfig {
 		// If you are using additional properties like,{ password ,ssl.enabled etc } you
 		// have to pass those
 		// values into JedisPool constructor.
-		JedisPool jedisPool = new JedisPool(poolConfig, redisHost, redisPort, redisTimeout);
-
-		return jedisPool;
+		return new JedisPool(poolConfig, redisHost, redisPort, redisTimeout);
 	}
 }
